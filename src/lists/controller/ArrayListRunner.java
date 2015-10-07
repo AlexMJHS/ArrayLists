@@ -3,9 +3,10 @@ package lists.controller;
 public class ArrayListRunner
 {
 	
-	public void start()
+	public static void main(String [] args)
 	{
-		
+		ArrayListController listController = new ArrayListController();
+		listController.start();
 	}
-	
+		
 }

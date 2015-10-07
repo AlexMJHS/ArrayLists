@@ -1,10 +1,30 @@
 package lists.controller;
 
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
 public class ArrayListController
+
 {
-	public static void main(String [] args)
+	private ArrayList<String> firstWords;
+		
+	public ArrayListController()
 	{
-		ArrayListController listController = new ArrayListController();
-		listController.start()
+		firstWords = new ArrayList<String>();
+	}
+	
+	public void start()
+	{
+		firstWords.add("asdfjkl");
+		firstWords.add("babababab");
+		showList();
+	}
+		
+	private void showList()
+	{
+		for(int spot = 0; spot < firstWords.size();spot++)
+		{	
+			JOptionPane.showMessageDialog(null,  firstWords.get(spot) + " is at spot# " + spot);
+		}
 	}
 }
